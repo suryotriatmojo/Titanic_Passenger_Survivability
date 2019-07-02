@@ -55,7 +55,6 @@ def home():
 def show_prediction(prediksi):
     print(prediksi)
     if prediksi == 1:
-        # hasil = 'Orang yang Anda cari selamat'
         return render_template('selamat.html')
     else:
         return render_template('mati.html')

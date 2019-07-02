@@ -4,13 +4,13 @@
 
 Using __Logistic Regression__ method to predict the passenger survival in Titanic accident.
 
-At the home page you are supposed to give input on one passenger through several criterias:
+At the home page you are supposed to give input of one passenger through several criterias:
 
 ![kapal_titanic](images/home.png)
 
 Then, the machine will predict whether that passenger is managed to be saved or dead.
 
-- If the passenger is save will show:
+- If the passenger is saved will show:
 ![save](images/save.png)
 
 - Else the passenger is predicted to be dead and will show:

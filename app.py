@@ -8,14 +8,25 @@ def home():
     if request.method == 'POST':
         
         sex = int(request.form['sex'])
-        if sex == 0:
-            female = 1
-            male = 0
-        else:
-            female = 0
-            male = 1
-
         age = int(request.form['age'])
+        if sex == 0:
+            female = 1; male = 0
+            if age < 15:
+                child = 1; man = 0
+                woman = 0; adultM = 0
+            else:
+                child = 0; man = 0
+                woman = 1; adultM = 0
+        else:
+            female = 0; male = 1
+            if age < 15:
+                child = 1; man = 0
+                woman = 0; adultM = 0
+            else:
+                child = 0; man = 1
+                woman = 0; adultM = 1
+
+        
         if sex == 0 and age >= 18:
             child = 0
             man = 0
@@ -36,7 +47,7 @@ def home():
         sibsp = int(request.form['sibsp'])
         parch = int(request.form['parch'])
 
-        if sibsp == 0 or parch == 0:
+        if sibsp == 0 and parch == 0:
             alone = 1
         else:
             alone = 0

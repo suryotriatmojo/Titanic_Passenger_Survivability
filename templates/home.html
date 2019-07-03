@@ -18,7 +18,8 @@
             <label for="">Jenis Kelamin</label>
             <select name="sex" id="">
                 <option value="0">Perempuan</option>
-                <option value="1">Laki - laki</option>
+                <option value="1">Pria</option>
+                <option selected hidden></option>
             </select>
             
         
@@ -41,7 +42,7 @@
             <input type="number" name="parch" min="0" placeholder="... orang">
 
             <label for="">Tarif</label>
-            <input type="number" name="fare" min="0" placeholder="Rp ...">
+            <input type="number" name="fare" min="0" max="512" placeholder="Rp ...">
 
             <br><br>
             <input type="submit" value="Masukkan Data Penumpang">
